@@ -102,7 +102,7 @@ export default function Hover(props) {
 						</table>
 					</TextInfo>
 					<TextInfo counter={counter} target={1} addCounter={addCounter}>
-						Legenda: <span style={{ color: "white" }}>■</span> Bapinho,
+						Legenda: <span style={{ color: "white" }}>■</span> Sonda,
 						<span style={{ color: "red" }}>▲</span> Base,
 						<span style={{ color: "blue" }}>◎</span> Refêrencia
 

@@ -66,16 +66,16 @@ export default function Home() {
         &gt;Gerando relatório de erros:
       </TextInfo>
       <TextInfo counter={counter} target={8} addCounter={addCounter}>
-        Erro detectado: senha secreta da base foi resetada para o padrão, reconfigure
+        Erro detectado: Sonda precisa retornar para base
       </TextInfo>
       <TextInfo counter={counter} target={9} addCounter={addCounter}>
-        Erro detectado: módulo de registradores desconfigurado
+        Erro detectado: Senha para abrir a sonda
       </TextInfo>
       <TextInfo counter={counter} target={10} addCounter={addCounter}>
-        Erro detectado: sensores de leitura de radiação desconfigurados
+        Erro detectado: Desconectar fios da sonda
       </TextInfo>
       <TextInfo counter={counter} target={11} addCounter={addCounter}>
-        Erro detectado: visão de satélite perdida, retornar com o hover para base
+        Erro detectado: Configurar filtro de radiação
       </TextInfo >
       <Hover counter={counter} target={12} addCounter={addCounter} />
       <div ref={ref} />
