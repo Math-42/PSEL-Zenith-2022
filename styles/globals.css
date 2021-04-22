@@ -1,0 +1,67 @@
+html,
+body {
+    padding: 1em;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html * {
+    color: green;
+    font-size: 18px;
+    text-shadow: 0 0 5px #C8C8C8;
+    font-family: Inconsolata, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    background-color: black;
+    border: none;
+    outline: none;
+}
+
+table,
+th,
+td,
+tbody {
+    border: none;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+::selection {
+    background: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.15em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0.308);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
