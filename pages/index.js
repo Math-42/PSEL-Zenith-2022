@@ -78,6 +78,7 @@ export default function Home() {
         Erro detectado: Configurar filtro de radiação
       </TextInfo >
       <Hover counter={counter} target={12} addCounter={addCounter} />
+      <Wires counter={counter} target={12} addCounter={addCounter} />
       <div ref={ref} />
     </div >
   )
