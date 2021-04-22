@@ -1,15 +1,20 @@
 import React from 'react'
-import { WindupChildren } from 'windups';
+import { WindupChildren, OnChar } from 'windups';
 
 export default function TextInfo(props) {
+
+	function scrollToEnd() {
+		window.dispatchEvent(new CustomEvent("scrollToEnd"))
+	}
+
 	return (
 		<div>
 			{props.counter >= props.target ?
-				<div>
-					<WindupChildren onFinished={props.addCounter} >
+				<WindupChildren onFinished={props.addCounter} >
+					<OnChar fn={scrollToEnd}>
 						{props.children}
-					</WindupChildren>
-				</div>
+					</OnChar>
+				</WindupChildren>
 				:
 				<></>
 			}
