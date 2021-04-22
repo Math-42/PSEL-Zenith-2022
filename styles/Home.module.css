@@ -8,7 +8,7 @@
   color: green;
   padding: 1em;
   border: 2px solid gray;
-  overflow: auto;
+  overflow: overlay scroll;
   overflow-x: hidden;
 }
 
