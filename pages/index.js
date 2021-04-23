@@ -99,9 +99,9 @@ export default function Home() {
         <TextInfo counter={counter} target={3} addCounter={addCounter} >
           <br />
           <span style={{ color: "white", display: 'flex', justifyContent: 'center' }}>
-            01111011 &nbsp; 01011010 &nbsp; 01000101 &nbsp; 01001110 &nbsp; 01010011 <br />
-          01000101 &nbsp; 01001110 &nbsp; 01001000 &nbsp; 01000001 &nbsp; 01011111 <br />
-          00110010 &nbsp; 00110000 &nbsp; 00110010 &nbsp; 00110001 &nbsp; 01111101  <br />
+            01111011&nbsp; 01011010&nbsp; 00110011&nbsp; 01001110&nbsp; 01010011 <br />
+            00110011&nbsp; 01001110&nbsp; 01001000&nbsp; 00110100&nbsp; 01011111 <br />
+            00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110001&nbsp; 01111101 <br />
           </span>
           <br />
           &gt; [NARRADOR]:"Pelo visto o sistema está executando de forma minima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
