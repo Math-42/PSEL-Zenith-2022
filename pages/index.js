@@ -24,16 +24,14 @@ export default function Home() {
     sound1 = new Howl({
       src: ['1.wav'],
       loop: true,
-      volume: 0.01
+      volume: 0.4
     });
 
     sound2 = new Howl({
       src: ['2.wav'],
       loop: true,
-      volume: 0.01,
+      volume: 0.4,
     });
-
-    console.log("começou o som")
 
     sound1.play();
     sound2.play();
