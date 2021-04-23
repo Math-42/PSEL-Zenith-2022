@@ -67,7 +67,7 @@ export default function Keyboard(props) {
 						</TextInfo>
 						<br />
 					</div>
-					<TextInput counter={counter} target={3} addCounter={addCounter} pass={"1-2-3-4"} >
+					<TextInput counter={counter} target={3} addCounter={addCounter} pass={"2-1-3-4"} >
 						&gt; Sequência de comandos:
 					</TextInput>
 					<TextInfo counter={counter} target={4} addCounter={addCounter} >

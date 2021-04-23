@@ -51,7 +51,7 @@ export default function TextInput(props) {
 
 				}
 				{props.counter >= props.target ?
-					<div>
+					<div style={{display:"flex"}}>
 						<WindupChildren onFinished={() => { ref.current.focus(); scrollToEnd() }}>
 							<OnChar fn={scrollToEnd}>
 								{props.children}
@@ -61,7 +61,9 @@ export default function TextInput(props) {
 							ref={ref}
 							spellCheck={false}
 							onKeyPress={validate}
-							readOnly={notEditable} />
+							readOnly={notEditable} 
+							style={{flex:1}}
+							/>
 					</div>
 					:
 					<></>

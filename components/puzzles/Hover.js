@@ -147,7 +147,7 @@ export default function Hover(props) {
 							Ex.: 1-1-2-2-3-4-2-2<br />
 						</TextInfo>
 					</div>
-					<TextInput counter={counter} target={5} addCounter={addCounter} pass={"1-2-3-4-5"} Append={Percurso}>
+					<TextInput counter={counter} target={5} addCounter={addCounter} pass={"3-4-4-3-4-2-4-3-4-2-2-2-1-1"} Append={Percurso}>
 						&gt; Sequência de comandos:
 					</TextInput>
 					<TextInfo counter={counter} target={6} addCounter={addCounter} >
