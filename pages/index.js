@@ -4,9 +4,9 @@ import TextInfo from '../components/TextInfo';
 import TextInput from '../components/TextInput';
 import Wires from '../components/puzzles/Wires';
 import Hover from '../components/puzzles/Hover';
-import { WindupChildren } from 'windups';
 import Keyboard from '../components/puzzles/Keyboard';
-
+import { Howl, Howler } from 'howler';
+import Colors from '../components/puzzles/Colors';
 
 export default function Home() {
   const [counter, setCounter] = useState(-1);
@@ -17,7 +17,29 @@ export default function Home() {
     }, 500);
   };
 
-  const scroll = 10;
+  let sound1;
+  let sound2;
+
+  function onStart() {
+    sound1 = new Howl({
+      src: ['1.wav'],
+      loop: true,
+      volume: 0.01
+    });
+
+    sound2 = new Howl({
+      src: ['2.wav'],
+      loop: true,
+      volume: 0.01,
+    });
+
+    console.log("começou o som")
+
+    sound1.play();
+    sound2.play();
+    Howler.volume(0.1);
+  }
+
 
   useEffect(() => {
 
@@ -28,14 +50,20 @@ export default function Home() {
     window.addEventListener("scrollToEnd", scroll);
 
 
-    return () => window.removeEventListener("scrollToEnd", scroll);
+    return () =>{
+      window.removeEventListener("scrollToEnd", scroll);
+      sound1.stop();
+      sound2.stop();
+
+    }
 
   }, []);
 
 
   return (
     <div>
-      <div className={styles.header}>PSEL_2021.1 nadir_v_1.1.2</div>
+      <div className={styles.header}>PSEL_2021.1 SERIAL:nadir_v_1.1.2</div>
+      <section className={styles.scanline} />
       <div className={styles.container}>
 
         <TextInfo counter={counter} target={-1} >
@@ -44,11 +72,10 @@ export default function Home() {
         - As falhas diminuem o tempo restante da atividade;<br />
         - Falhar não influencia na avaliação;<br />
         - Mais alguma coisa?<br />
-          <TextInput counter={counter} target={-1} pass={"start"} addCounter={addCounter}>
+          <TextInput counter={counter} target={-1} pass={"start"} addCounter={addCounter} onStart={onStart} >
             &gt; Insira a senha para começar:
           </TextInput>
         </TextInfo>
-
         <TextInfo counter={counter} target={0} addCounter={addCounter} >
           &gt; [NARRADOR]:"O ano é 2050, e o zenith está enviando seus primeiros astronautas para marte, o objetivo?
           criar a primeira colônia humana no planeta vermelho e vocês foram os encarregados para tal tarefa.
@@ -59,8 +86,8 @@ export default function Home() {
           determinada manhã marciana percebem que não receberam nenhuma mensagem da base terráquea, como era de costume,
           e, ao investigar isso, notam que nenhuma telemetria está funcionando e a única pista é o terminal de controle,
           que mostra a seguinte mensagem"
-      </TextInfo>
-        <br />
+          <br />
+        </TextInfo>
         <TextInfo counter={counter} target={2} addCounter={addCounter} >
           &gt; Iniciando sitema <br />
         &gt; Iniciando leitura do log de dados <br />
@@ -73,15 +100,15 @@ export default function Home() {
       </TextInfo>
         <TextInfo counter={counter} target={3} addCounter={addCounter} >
           <br />
-          <span style={{ color: "white",display: 'flex',justifyContent: 'center'}}>
+          <span style={{ color: "white", display: 'flex', justifyContent: 'center' }}>
             01111011 &nbsp; 01011010 &nbsp; 01000101 &nbsp; 01001110 &nbsp; 01010011 <br />
           01000101 &nbsp; 01001110 &nbsp; 01001000 &nbsp; 01000001 &nbsp; 01011111 <br />
           00110010 &nbsp; 00110000 &nbsp; 00110010 &nbsp; 00110001 &nbsp; 01111101  <br />
           </span>
           <br />
           &gt; [NARRADOR]:"Pelo visto o sistema está executando de forma minima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
+          <br />
         </TextInfo>
-        <br />
         <TextInput counter={counter} target={4} pass={"{Z3NS3NH4_2021}"} addCounter={addCounter}>
           &gt; Insira uma chave válida:
       </TextInput>
@@ -142,9 +169,8 @@ export default function Home() {
           <br />
         </TextInfo>
         <Hover counter={counter} target={23} addCounter={addCounter} />
-
-        <br />
         <TextInfo counter={counter} target={24} addCounter={addCounter} >
+          <br />
           &gt; [NARRADOR]:"Depois de alguns minutos o hover volta para a base"
         </TextInfo>
         <TextInfo counter={counter} target={25} addCounter={addCounter} >
@@ -174,11 +200,12 @@ export default function Home() {
           &gt; [NARRADOR]:"O fio se solta e vocês finalmente tem acesso ao painel do filtro de radiação"
         </TextInfo>
         <TextInfo counter={counter} target={35} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O painel se abre e mostra algumas lentes que certamente não estão na ordem certa"
+          &gt; [NARRADOR]:"O painel se abre e mostra uma mistura de cores que deveria ser um espectro perfeito, é preciso correr para reorganizar"
         </TextInfo>
         <TextInfo counter={counter} target={36} addCounter={addCounter} >
           &gt; [NARRADOR]:"Bom acho que dessa vez já sabem onde encontrar ajuda..."
         </TextInfo>
+        <Colors counter={counter} target={37} addCounter={addCounter} />
         <div ref={ref} style={{ marginTop: "1em", width: "100%", height: "10px" }} />
       </div >
     </div>
