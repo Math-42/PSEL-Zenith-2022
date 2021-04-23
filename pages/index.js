@@ -50,10 +50,10 @@ export default function Home() {
     window.addEventListener("scrollToEnd", scroll);
 
 
-    return () =>{
+    return () => {
       window.removeEventListener("scrollToEnd", scroll);
-      sound1.stop();
-      sound2.stop();
+      sound1?.stop?.();
+      sound2?.stop?.();
 
     }
 
@@ -93,7 +93,7 @@ export default function Home() {
         &gt; Iniciando leitura do log de dados <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Tempestade solar detectada <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Altos níveis de radiação detectado <br />
-        &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Sistemas comprometidos <br />
+        &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Sistemas da base podem estar comprometidos <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Entrando em modo de segurança<br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Desativando serviços não essenciais<br />
         &gt; Um erro ocorreu, chave de comunicação inválida, valor recebido:
@@ -200,12 +200,31 @@ export default function Home() {
           &gt; [NARRADOR]:"O fio se solta e vocês finalmente tem acesso ao painel do filtro de radiação"
         </TextInfo>
         <TextInfo counter={counter} target={35} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O painel se abre e mostra uma mistura de cores que deveria ser um espectro perfeito, é preciso correr para reorganizar"
+          &gt; [NARRADOR]:"O painel se abre e mostra 3 sequências de cores que deveriam formar um espectro perfeito mas esta uma bagunça, é preciso correr para reorganizar"
         </TextInfo>
         <TextInfo counter={counter} target={36} addCounter={addCounter} >
           &gt; [NARRADOR]:"Bom acho que dessa vez já sabem onde encontrar ajuda..."
         </TextInfo>
         <Colors counter={counter} target={37} addCounter={addCounter} />
+
+        <TextInfo counter={counter} target={38} addCounter={addCounter} >
+          &gt; Iniciando diagnóstico do hover...
+        </TextInfo>
+        <TextInfo counter={counter} target={39} addCounter={addCounter} >
+          &gt; Progresso: ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊ 100%
+        </TextInfo>
+        <TextInfo counter={counter} target={40} addCounter={addCounter} >
+          &gt;<span style={{ color: "blue" }}>[INFO]</span> Estatus atual: OPERANTE
+        </TextInfo>
+        <TextInfo counter={counter} target={41} addCounter={addCounter} >
+          &gt; [NARRADOR]:"Vocês escutam alguns bips enquanto conectam os fios retirados e fecham sua carcaça"
+        </TextInfo>
+        <TextInfo counter={counter} target={42} addCounter={addCounter} >
+          &gt; [NARRADOR]:"O hover foi concertado <del>até a próxima tempestade</del> com sucesso!"
+        </TextInfo>
+        <TextInfo counter={counter} target={43} addCounter={addCounter} >
+          &gt; [NARRADOR]:"Missão cumprida!"
+        </TextInfo>
         <div ref={ref} style={{ marginTop: "1em", width: "100%", height: "10px" }} />
       </div >
     </div>

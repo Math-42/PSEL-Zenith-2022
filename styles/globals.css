@@ -35,8 +35,7 @@ tbody {
     margin: 0;
 }
 
-h1 {
-    font-size: 16px;
+a {
     background: linear-gradient(90deg, #ff0000 1%, #ff0088 8%, #ff00ff 16%, #8800ff 24%, #0000ff 32%, #0088ff 40%, #00ffff 48%, #00ff88 56%, #00ff00 64%, #88ff00 72%, #ffff00 80%, #ff8800 88%, #ff0000 99%);
     background-clip: text;
     -webkit-background-clip: text;
