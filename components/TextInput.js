@@ -6,7 +6,7 @@ export default function TextInput(props) {
 	const [erros, setErros] = useState([]);
 	const [notEditable, setNotEditable] = useState(false)
 	const ref = React.createRef();
-	const {Append} = props;
+	const { Append } = props;
 	function scrollToEnd() {
 		window.dispatchEvent(new CustomEvent("scrollToEnd"))
 	}
@@ -17,6 +17,7 @@ export default function TextInput(props) {
 			if (value === props.pass) {
 				setNotEditable(true)
 				props.addCounter();
+				props?.onStart?.();
 			} else {
 
 				erros.push(value)
@@ -28,7 +29,7 @@ export default function TextInput(props) {
 
 	useEffect(() => {
 		scrollToEnd()
-		
+
 	}, [erros.length])
 
 	return (
@@ -36,22 +37,22 @@ export default function TextInput(props) {
 			<div>
 				{
 					erros.map((value, idx) => {
-						
+
 						return (
 							<div key={idx}>
 								{props.children}{value}<br />
 								{	Append ?
-									<Append key={idx} value={value} />:
+									<Append key={idx} value={value} /> :
 									<>{'>'} <span style={{ color: "red" }}>[ERROR]</span>Entrada inválida:{value}</>
 								}
 							</div>
 						)
 					})
-					
+
 				}
 				{props.counter >= props.target ?
 					<div>
-						<WindupChildren onFinished={() => {ref.current.focus();scrollToEnd()}}>
+						<WindupChildren onFinished={() => { ref.current.focus(); scrollToEnd() }}>
 							<OnChar fn={scrollToEnd}>
 								{props.children}
 							</OnChar>

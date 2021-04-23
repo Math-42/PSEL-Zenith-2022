@@ -9,8 +9,9 @@ body {
 html * {
     color: green;
     font-size: 18px;
-    text-shadow: 0 0 5px #C8C8C8;
+    text-shadow: 0.2px 1.2px 1px #C8C8C8;
     font-family: Inconsolata, monospace;
+
 }
 
 * {
@@ -18,7 +19,7 @@ html * {
 }
 
 input {
-    background-color: black;
+    background-color: transparent;
     border: none;
     outline: none;
 }
@@ -34,9 +35,16 @@ tbody {
     margin: 0;
 }
 
-
-
-
+h1 {
+    font-size: 16px;
+    background: linear-gradient(90deg, #ff0000 1%, #ff0088 8%, #ff00ff 16%, #8800ff 24%, #0000ff 32%, #0088ff 40%, #00ffff 48%, #00ff88 56%, #00ff00 64%, #88ff00 72%, #ffff00 80%, #ff8800 88%, #ff0000 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-shadow: none;
+}
 
 body {
     content: "";
@@ -65,7 +73,7 @@ body::before {
     background-size: 100% 3px;
     z-index: 2;
     pointer-events: none;
-  }
+}
 
 ::selection {
     background: none;
@@ -85,4 +93,31 @@ body::before {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@keyframes textShadow {
+    0% {
+        text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5), -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+
+    5% {
+        text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5), -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+
+    /** etc */
+}
+
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+
+    80% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
 }
