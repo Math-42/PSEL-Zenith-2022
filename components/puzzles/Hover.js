@@ -3,6 +3,31 @@ import { useState } from 'react';
 import TextInfo from '../TextInfo';
 import TextInput from '../TextInput';
 
+function Percurso(props) {
+	const dangers = [
+		"Colinas",
+		"Crateras",
+		"Desfiladeiro",
+	]
+	const regex = /^[1-4]+(-[1-4]+)+$/;
+	if (regex.test(props.value)) {
+		return (
+			<div>
+				&gt; Iniciando percurso:{props.value} <br />
+				&gt; <span style={{ color: "red" }}>[ERROR]</span>Perigo encontrado: {dangers[Math.floor((Math.random() * 100)) % 3]}<br />
+				&gt; <span style={{ color: "blue" }}>[INFO]</span>Retornando para última posição segura
+			</div>
+		)
+	} else {
+		return (
+			<div>
+				&gt; <span style={{ color: "red" }}>[ERROR]</span>Formato não compativel<br />
+			</div>
+		)
+	}
+
+}
+
 export default function Hover(props) {
 	const [counter, setCounter] = useState(0);
 
@@ -17,7 +42,7 @@ export default function Hover(props) {
 			{props.counter >= props.target ?
 				<div>
 					<div style={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-						<TextInfo counter={counter} target={0} addCounter={addCounter} scroll={props.scroll}>
+						<TextInfo counter={counter} target={0} addCounter={addCounter}>
 							<table>
 								<tbody>
 									<tr >
@@ -103,31 +128,36 @@ export default function Hover(props) {
 								</tbody>
 							</table>
 						</TextInfo>
-						<TextInfo counter={counter} target={1} addCounter={addCounter} scroll={props.scroll}>
+						<TextInfo counter={counter} target={1} addCounter={addCounter}>
 							Legenda: <span style={{ color: "white" }}>■</span> Hover,
 						<span style={{ color: "red" }}>▲</span> Base,
 						<span style={{ color: "blue" }}>◎</span> Refêrencia
 						</TextInfo>
-						<TextInfo counter={counter} target={2} addCounter={addCounter} scroll={props.scroll}>
+						<TextInfo counter={counter} target={2} addCounter={addCounter}>
 							Comandos:
 							1-subir,
 							2-direita,
 							3-esquerda,
 							4-descer
 						</TextInfo>
-						<TextInfo counter={counter} target={3} addCounter={addCounter} scroll={props.scroll}>
+						<TextInfo counter={counter} target={3} addCounter={addCounter}>
 							<span style={{ color: "blue" }}>[INFO]</span> Os comandos devem ser enviados da forma:
 						</TextInfo>
-						<TextInfo counter={counter} target={4} addCounter={addCounter} scroll={props.scroll}>
+						<TextInfo counter={counter} target={4} addCounter={addCounter}>
 							Ex.: 1-1-2-2-3-4-2-2<br />
 						</TextInfo>
 					</div>
-					<TextInput counter={counter} target={5} addCounter={addCounter} pass={"1-2-3-4-5"}>
-						<br />
-					&gt; Sequência de comandos:
+					<TextInput counter={counter} target={5} addCounter={addCounter} pass={"1-2-3-4-5"} Append={Percurso}>
+						&gt; Sequência de comandos:
 					</TextInput>
-					<TextInfo counter={counter} target={6} addCounter={props.addCounter} scroll={props.scroll}>
-						&gt; Hover recuperado com sucesso
+					<TextInfo counter={counter} target={6} addCounter={addCounter} >
+						&gt; Iniciando percurso...
+					</TextInfo>
+					<TextInfo counter={counter} target={7} addCounter={addCounter} >
+						&gt; Progresso: ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊ 100%
+					</TextInfo>
+					<TextInfo counter={counter} target={8} addCounter={props.addCounter} >
+						&gt; Hover recuperado com sucesso!
 					</TextInfo>
 				</div> :
 				<></>
