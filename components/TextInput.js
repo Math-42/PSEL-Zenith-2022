@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { WindupChildren, OnChar } from 'windups';
 
 export default function TextInput(props) {
@@ -6,7 +6,7 @@ export default function TextInput(props) {
 	const [erros, setErros] = useState([]);
 	const [notEditable, setNotEditable] = useState(false)
 	const ref = React.createRef();
-
+	const {Append} = props;
 	function scrollToEnd() {
 		window.dispatchEvent(new CustomEvent("scrollToEnd"))
 	}
@@ -26,22 +26,32 @@ export default function TextInput(props) {
 		}
 	}
 
+	useEffect(() => {
+		scrollToEnd()
+		
+	}, [erros.length])
+
 	return (
 		<div>
 			<div>
 				{
 					erros.map((value, idx) => {
+						
 						return (
 							<div key={idx}>
-								{props.children}<br />
-								&gt;<span style={{ color: "red" }}>[ERROR]</span>Entrada inválida:{value}
+								{props.children}{value}<br />
+								{	Append ?
+									<Append key={idx} value={value} />:
+									<>{'>'} <span style={{ color: "red" }}>[ERROR]</span>Entrada inválida:{value}</>
+								}
 							</div>
 						)
 					})
+					
 				}
 				{props.counter >= props.target ?
 					<div>
-						<WindupChildren onFinished={() => ref.current.focus()}>
+						<WindupChildren onFinished={() => {ref.current.focus();scrollToEnd()}}>
 							<OnChar fn={scrollToEnd}>
 								{props.children}
 							</OnChar>
