@@ -26,12 +26,17 @@ input {
 table,
 th,
 td,
+tr,
 tbody {
     border: none;
     border-collapse: collapse;
     padding: 0;
     margin: 0;
 }
+
+
+
+
 
 body {
     content: "";
@@ -45,6 +50,22 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+body::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(128, 41, 41, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 3px;
+    z-index: 2;
+    pointer-events: none;
+  }
 
 ::selection {
     background: none;

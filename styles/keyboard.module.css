@@ -1,0 +1,17 @@
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.keyboard td>img {
+    filter: invert();
+    width: 50px;
+}
+
+.keyboard td {
+    border: 1px solid green;
+    box-shadow: 0 0 3px #C8C8C8;
+    text-align: center;
+}
