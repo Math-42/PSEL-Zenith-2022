@@ -65,36 +65,36 @@ export default function Home() {
       <div className={styles.container}>
 
         <TextInfo counter={counter} target={-1} >
-          &gt; OBSERVÇÕES E REGRAS<br />
-        - O objetivo é avaliar os jogadores;<br />
+          &gt; OBSERVAÇÕES E REGRAS<br />
+        - O objetivo é avaliar a integração entre os jogadores durante a dinâmica;<br />
         - As falhas diminuem o tempo restante da atividade;<br />
-        - Falhar não influencia na avaliação;<br />
-        - Mais alguma coisa?<br />
+        - Falhar não influencia na sua avaliação no Processo Seletivo;<br />
+        - Mais alguma dúvida? Pergunte ao seu avaliador.<br />
           <TextInput counter={counter} target={-1} pass={"start"} addCounter={addCounter} onStart={onStart} >
             &gt; Insira a senha para começar:
           </TextInput>
         </TextInfo>
         <TextInfo counter={counter} target={0} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O ano é 2050, e o zenith está enviando seus primeiros astronautas para marte, o objetivo?
-          criar a primeira colônia humana no planeta vermelho e vocês foram os encarregados para tal tarefa.
-        Vocês chegam em marte, e já iniciam seus trabalhos.<br />
+          &gt; [NARRADOR]:"O ano é 2050 e o Zenith está enviando seus primeiros astronautas para Marte. Objetivo?
+          Criar a primeira colônia humana no planeta vermelho. Vocês foram os encarregados para tal tarefa.
+          Vocês chegam em Marte e já iniciam seus trabalhos.<br />
         </TextInfo>
         <TextInfo counter={counter} target={1} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Tudo ocorre bem nos primeiros dias, até que em uma
-          determinada manhã marciana percebem que não receberam nenhuma mensagem da base terráquea, como era de costume,
+          &gt; [NARRADOR]:"Tudo ocorre bem nos primeiros dias... Até que, em uma
+          determinada manhã marciana, vocês percebem que não receberam nenhuma mensagem da base terráquea, como era de costume,
           e, ao investigar isso, notam que nenhuma telemetria está funcionando e a única pista é o terminal de controle,
           que mostra a seguinte mensagem"
           <br />
         </TextInfo>
         <TextInfo counter={counter} target={2} addCounter={addCounter} >
-          &gt; Iniciando sitema <br />
+          &gt; Iniciando sistema <br />
         &gt; Iniciando leitura do log de dados <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Tempestade solar detectada <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Altos níveis de radiação detectado <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Sistemas da base podem estar comprometidos <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Entrando em modo de segurança<br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Desativando serviços não essenciais<br />
-        &gt; Um erro ocorreu, chave de comunicação inválida, valor recebido:
+        &gt; Um erro ocorreu: chave de comunicação inválida. Valor recebido:
       </TextInfo>
         <TextInfo counter={counter} target={3} addCounter={addCounter} >
           <br />
@@ -129,82 +129,81 @@ export default function Home() {
           &gt; Sincronizando configurações e software
       </TextInfo>
         <TextInfo counter={counter} target={11} addCounter={addCounter} >
-          &gt; Checando módulo hover
+          &gt; Checando módulo Hover
       </TextInfo>
         <TextInfo counter={counter} target={12} addCounter={addCounter} >
           <span style={{ color: "red" }}>[ERRO]</span> Problemas detectados
       </TextInfo>
         <TextInfo counter={counter} target={13} addCounter={addCounter} >
-          <span style={{ color: "red" }}>[ERRO]</span> Sistema operacional do hover comprometido
+          <span style={{ color: "red" }}>[ERRO]</span> Sistema operacional do Hover comprometido
       </TextInfo>
         <TextInfo counter={counter} target={14} addCounter={addCounter} >
           <span style={{ color: "red" }}>[ERRO]</span> Filtro de radiação comprometido
       </TextInfo>
         <TextInfo counter={counter} target={15} addCounter={addCounter} >
-          <span style={{ color: "yellow" }}>[AVISO]</span> Ativando modo de segurança do hover
+          <span style={{ color: "yellow" }}>[AVISO]</span> Ativando modo de segurança do Hover
       </TextInfo>
         <TextInfo counter={counter} target={16} addCounter={addCounter} >
-          &gt; Calculando riscos ...
+          &gt; Calculando riscos...
       </TextInfo>
         <TextInfo counter={counter} target={17} addCounter={addCounter} >
           <span style={{ color: "purple" }}>[PERIGO]</span> Tempestade solar se aproximando
         </TextInfo>
         <TextInfo counter={counter} target={18} addCounter={addCounter} >
-          <span style={{ color: "yellow" }}>[AVISO]</span> O hover deve ser recuperado imediatamente
+          <span style={{ color: "yellow" }}>[AVISO]</span> O Hover deve ser recuperado imediatamente
         </TextInfo>
         <TextInfo counter={counter} target={19} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Pelo visto uma tempestade solar ocorreu durante a noite e bagunçou um pouco os sistemas, ainda bem que vocês possuem um backup de tudo"
+          &gt; [NARRADOR]:"Pelo visto uma tempestade solar ocorreu durante a noite e bagunçou um pouco os sistemas, ainda bem que vocês possuem um backup de tudo."
         </TextInfo>
         <TextInfo counter={counter} target={20} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o hover não tem a mesma sorte, caso ele não seja recuperado e concertado a tempo {`\${InserirAlgoTerrível}`} pode acontecer"
+          &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o Hover não tem a mesma sorte, caso ele não seja recuperado e concertado a tempo {`\${InserirAlgoTerrível}`} pode acontecer"
         </TextInfo>
         <TextInfo counter={counter} target={21} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Um painel se abre diante de vocês indicando a posição de onde o hover estava quando começou a falhar"
+          &gt; [NARRADOR]:"Um painel se abre diante de vocês indicando a posição de onde o hover estava quando começou a falhar."
         </TextInfo>
         <TextInfo counter={counter} target={22} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O modo de segurança parece ser bem simplista mesmo, talvez alguem na central ainda saiba como utilizar isso"
+          &gt; [NARRADOR]:"O modo de segurança parece ser bem simplista mesmo, talvez alguém na central ainda saiba como utilizar isso."
           <br />
           <br />
         </TextInfo>
         <Hover counter={counter} target={23} addCounter={addCounter} />
         <TextInfo counter={counter} target={24} addCounter={addCounter} >
           <br />
-          &gt; [NARRADOR]:"Depois de alguns minutos o hover volta para a base"
+          &gt; [NARRADOR]:"Depois de alguns minutos, o hover volta para a base."
         </TextInfo>
         <TextInfo counter={counter} target={25} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Para poder concertá-lo será necessário abrir sua carcaça"
+          &gt; [NARRADOR]:"Para poder concertá-lo, será necessário abrir sua carcaça."
         </TextInfo>
         <TextInfo counter={counter} target={26} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Não há outro jeito, forçar algo só causaria mais danos ao Hover, talvez as plantas do Hover possuam alguma explicação"
+          &gt; [NARRADOR]:"Não há outro jeito. Forçar algo só causaria mais danos ao Hover, talvez as plantas do Hover possuam alguma explicação."
         </TextInfo>
         <TextInfo counter={counter} target={27} addCounter={addCounter} >
           &gt; [NARRADOR]:"Vocês olham por cima do Hover e percebem um teclado com simbolos estranhos, parece um tipo de senha, mas qual a ordem certa?"
         </TextInfo>
         <Keyboard counter={counter} target={28} addCounter={addCounter} />
         <TextInfo counter={counter} target={29} addCounter={addCounter} >
-          &gt; [NARRADOR]:"A tampa do robo se levanta"
+          &gt; [NARRADOR]:"A tampa do robo se levanta."
         </TextInfo>
         <TextInfo counter={counter} target={30} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Por sorte o Hover parece estar em um bom estado por dentro, mas logo outro problema surge"
+          &gt; [NARRADOR]:"Por sorte, o Hover parece estar em um bom estado por dentro, mas logo outro problema surge."
         </TextInfo>
         <TextInfo counter={counter} target={31} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Existem fios cobrindo o painel de acesso ao filtro de radiação, resta saber qual se pode desconectar para alcança-la"
+          &gt; [NARRADOR]:"Existem fios cobrindo o painel de acesso ao filtro de radiação. Resta saber qual se pode desconectar para alcançá-la."
         </TextInfo>
         <TextInfo counter={counter} target={32} addCounter={addCounter} >
           &gt; [NARRADOR]:"Para as plantas novamente..."
         </TextInfo>
         <Wires counter={counter} target={33} addCounter={addCounter} />
         <TextInfo counter={counter} target={34} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O fio se solta e vocês finalmente tem acesso ao painel do filtro de radiação"
+          &gt; [NARRADOR]:"O fio se solta e vocês finalmente têm acesso ao painel do filtro de radiação."
         </TextInfo>
         <TextInfo counter={counter} target={35} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O painel se abre e mostra 3 sequências de cores que deveriam formar um espectro perfeito mas esta uma bagunça, é preciso correr para reorganizar"
+          &gt; [NARRADOR]:"O painel se abre e mostra 3 sequências de cores que deveriam formar um espectro perfeito, mas está uma bagunça. É preciso correr para reorganizar."
         </TextInfo>
         <TextInfo counter={counter} target={36} addCounter={addCounter} >
           &gt; [NARRADOR]:"Bom acho que dessa vez já sabem onde encontrar ajuda..."
         </TextInfo>
         <Colors counter={counter} target={37} addCounter={addCounter} />
-
         <TextInfo counter={counter} target={38} addCounter={addCounter} >
           &gt; Iniciando diagnóstico do hover...
         </TextInfo>
@@ -212,10 +211,10 @@ export default function Home() {
           &gt; Progresso: ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊ 100%
         </TextInfo>
         <TextInfo counter={counter} target={40} addCounter={addCounter} >
-          &gt;<span style={{ color: "blue" }}>[INFO]</span> Estatus atual: OPERANTE
+          &gt;<span style={{ color: "blue" }}>[INFO]</span> Status atual: OPERANTE
         </TextInfo>
         <TextInfo counter={counter} target={41} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Vocês escutam alguns bips enquanto conectam os fios retirados e fecham sua carcaça"
+          &gt; [NARRADOR]:"Vocês escutam alguns bips, enquanto conectam os fios retirados e fecham sua carcaça."
         </TextInfo>
         <TextInfo counter={counter} target={42} addCounter={addCounter} >
           &gt; [NARRADOR]:"O hover foi concertado <del>até a próxima tempestade</del> com sucesso!"
