@@ -198,7 +198,7 @@ export default function Home() {
           &gt; [NARRADOR]:"O fio se solta e vocês finalmente têm acesso ao painel do filtro de radiação."
         </TextInfo>
         <TextInfo counter={counter} target={35} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O painel se abre e mostra 3 sequências de cores que deveriam formar um espectro perfeito, mas está uma bagunça. É preciso correr para reorganizar."
+          &gt; [NARRADOR]:"O painel se abre e mostra 3 módulos de cores que deveriam formar um espectro perfeito, mas está uma bagunça. É preciso correr para reorganizar."
         </TextInfo>
         <TextInfo counter={counter} target={36} addCounter={addCounter} >
           &gt; [NARRADOR]:"Bom acho que dessa vez já sabem onde encontrar ajuda..."
