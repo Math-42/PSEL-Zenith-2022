@@ -24,6 +24,7 @@ export default function TextInput(props) {
 				erros.push(value)
 				setErros([...erros]);
 				ref.current.value = ""
+				window.dispatchEvent(new CustomEvent("error"));
 			}
 		}
 	}

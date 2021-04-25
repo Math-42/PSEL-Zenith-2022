@@ -7,9 +7,11 @@ import Hover from '../components/puzzles/Hover';
 import Keyboard from '../components/puzzles/Keyboard';
 import { Howl, Howler } from 'howler';
 import Colors from '../components/puzzles/Colors';
+import Timer from '../components/Timer';
 
 export default function Home() {
   const [counter, setCounter] = useState(-1);
+  const [finalScreen, setFinalScreen] = useState(false);
   const ref = useRef();
   const addCounter = () => {
     setTimeout(() => {
@@ -20,7 +22,15 @@ export default function Home() {
   let sound1;
   let sound2;
 
+  function showFinalScreen() {
+    if (counter < 38) {
+      setCounter(-1);
+      setFinalScreen(true);
+    }
+  }
+
   function onStart() {
+    window.dispatchEvent(new CustomEvent("startTimer"))
     sound1 = new Howl({
       src: ['1.wav'],
       loop: true,
@@ -46,8 +56,7 @@ export default function Home() {
     };
 
     window.addEventListener("scrollToEnd", scroll);
-    console.log("effect")
-
+    window.addEventListener("timerFinished", showFinalScreen);
     return () => {
       window.removeEventListener("scrollToEnd", scroll);
       sound1?.stop?.();
@@ -62,6 +71,18 @@ export default function Home() {
     <div>
       <div className={styles.header}>PSEL_2021.1 SERIE:Z3N4DIR</div>
       <section className={styles.scanline} />
+      {finalScreen ?
+        <div className={styles.finalScreen}>
+          <TextInfo counter={0} target={0} >
+            O tempo acabou.
+          </TextInfo>
+          <TextInfo counter={0} target={0} >
+            Infelizmente não foi possivel salvar o hover :(
+          </TextInfo>
+        </div> :
+        <></>
+      }
+      <Timer />
       <div className={styles.container}>
 
         <TextInfo counter={counter} target={-1} >
