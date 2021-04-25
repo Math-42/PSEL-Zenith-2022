@@ -14,7 +14,7 @@ function Percurso(props) {
 		return (
 			<div>
 				&gt; Iniciando percurso:{props.value} <br />
-				&gt; <span style={{ color: "red" }}>[ERROR]</span>Perigo encontrado: {dangers[Math.floor((Math.random() * 100)) % 3]}<br />
+				&gt; <span style={{ color: "red" }}>[ERROR]</span>Perigo(s) encontrado(s): {dangers[Math.floor((Math.random() * 100)) % 3]}<br />
 				&gt; <span style={{ color: "blue" }}>[INFO]</span>Retornando para última posição segura
 			</div>
 		)
