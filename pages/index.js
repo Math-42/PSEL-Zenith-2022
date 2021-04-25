@@ -81,8 +81,8 @@ export default function Home() {
         </TextInfo>
         <TextInfo counter={counter} target={1} addCounter={addCounter} >
           &gt; [NARRADOR]:"Tudo ocorre bem nos primeiros dias... Até que, em uma
-          determinada manhã marciana, vocês percebem que não receberam nenhuma mensagem da base terráquea, como era de costume,
-          e, ao investigar isso, notam que nenhuma telemetria está funcionando e a única pista é o terminal de controle,
+          determinada manhã marciana, vocês percebem que não receberam nenhuma mensagem do hover, como era de costume,
+          e, ao investigar isso, notam que a telemetria não está funcionando e a única pista é o terminal de controle,
           que mostra a seguinte mensagem"
           <br />
         </TextInfo>
@@ -94,7 +94,7 @@ export default function Home() {
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Sistemas da base podem estar comprometidos <br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Entrando em modo de segurança<br />
         &gt;<span style={{ color: "yellow" }}> [AVISO]</span> Desativando serviços não essenciais<br />
-        &gt; Um erro ocorreu: chave de comunicação inválida. Valor recebido:
+        &gt; Um erro ocorreu: chave de comunicação do hover inválida. Valor recebido:
       </TextInfo>
         <TextInfo counter={counter} target={3} addCounter={addCounter} >
           <br />
@@ -104,7 +104,7 @@ export default function Home() {
             00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110001&nbsp; 01111101 <br />
           </span>
           <br />
-          &gt; [NARRADOR]:"Pelo visto o sistema está executando de forma minima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
+          &gt; [NARRADOR]:"Pelo visto a tempestade atingiu o hover e seu sistema está executando de forma minima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
           <br />
         </TextInfo>
         <TextInput counter={counter} target={4} pass={"{Z3NS3NH4_2021}"} addCounter={addCounter}>
@@ -123,7 +123,7 @@ export default function Home() {
           &gt; Fazendo varredura do sistema
       </TextInfo>
         <TextInfo counter={counter} target={9} addCounter={addCounter} >
-          &gt; Nenhum subsistema foi comprometido
+          &gt; Nenhum subsistema da base foi comprometido
       </TextInfo>
         <TextInfo counter={counter} target={10} addCounter={addCounter} >
           &gt; Sincronizando configurações e software
@@ -153,7 +153,7 @@ export default function Home() {
           <span style={{ color: "yellow" }}>[AVISO]</span> O Hover deve ser recuperado imediatamente
         </TextInfo>
         <TextInfo counter={counter} target={19} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Pelo visto uma tempestade solar ocorreu durante a noite e bagunçou um pouco os sistemas, ainda bem que vocês possuem um backup de tudo."
+          &gt; [NARRADOR]:"Uma tempestade solar ocorreu durante a noite e bagunçou um pouco os sistemas, ainda bem que vocês possuem um backup de tudo."
         </TextInfo>
         <TextInfo counter={counter} target={20} addCounter={addCounter} >
           &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o Hover não tem a mesma sorte, caso ele não seja recuperado e concertado a tempo {`\${InserirAlgoTerrível}`} pode acontecer"
