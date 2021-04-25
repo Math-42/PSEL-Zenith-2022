@@ -68,7 +68,7 @@ export default function Colors(props) {
 							Ex.: 1-1-2-2<br /><br />
 						</TextInfo>
 					</div>
-					<TextInput counter={counter} target={4} addCounter={addBothCounter} pass={"1-2-3-4"}>
+					<TextInput counter={counter} target={4} addCounter={addBothCounter} pass={"2-1-3"}>
 							&gt; Primeira combinação:
 					</TextInput>
 					<TextInfo counter={counter} target={5} addCounter={addCounter} >
@@ -80,7 +80,7 @@ export default function Colors(props) {
 					<TextInfo counter={counter} target={7} addCounter={addCounter} >
 						&gt; Progresso: ▊▊▊▊▊▊▊▊25%
 					</TextInfo>
-					<TextInput counter={counter} target={8} addCounter={addBothCounter} pass={"1-2-3-4"}>
+					<TextInput counter={counter} target={8} addCounter={addBothCounter} pass={"3-2-2-4"}>
 							&gt; Segunda combinação:
 					</TextInput>
 					<TextInfo counter={counter} target={9} addCounter={addCounter} >
@@ -92,7 +92,7 @@ export default function Colors(props) {
 					<TextInfo counter={counter} target={11} addCounter={addCounter} >
 						&gt; Progresso: ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊ 58%
 					</TextInfo>
-					<TextInput counter={counter} target={12} addCounter={addBothCounter} pass={"1-2-3-4"}>
+					<TextInput counter={counter} target={12} addCounter={addBothCounter} pass={"3-2-3-4-1"}>
 							&gt; Terceira combinação:
 					</TextInput>
 					<TextInfo counter={counter} target={13} addCounter={addCounter} >

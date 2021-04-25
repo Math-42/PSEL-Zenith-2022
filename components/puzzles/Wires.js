@@ -294,7 +294,7 @@ export default function Wires(props) {
 						</TextInfo>
 						<br/>
 					</div>
-					<TextInput counter={counter} target={2} addCounter={props.addCounter} pass={"1"} >
+					<TextInput counter={counter} target={2} addCounter={props.addCounter} pass={"2"} >
 						&gt; Fio a ser desconectado:
 					</TextInput>
 				</>
