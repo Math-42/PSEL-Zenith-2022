@@ -46,7 +46,7 @@ export default function Home() {
     };
 
     window.addEventListener("scrollToEnd", scroll);
-
+    console.log("effect")
 
     return () => {
       window.removeEventListener("scrollToEnd", scroll);
@@ -60,7 +60,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className={styles.header}>PSEL_2021.1 SERIAL:nadir_v_1.1.2</div>
+      <div className={styles.header}>PSEL_2021.1 SERIE:Z3N4DIR</div>
       <section className={styles.scanline} />
       <div className={styles.container}>
 
