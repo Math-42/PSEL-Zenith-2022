@@ -18,6 +18,7 @@ export default function TextInput(props) {
 				setNotEditable(true)
 				props.addCounter();
 				props?.onStart?.();
+				ref.current.blur();
 			} else {
 
 				erros.push(value)
