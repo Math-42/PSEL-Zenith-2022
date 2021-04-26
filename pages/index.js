@@ -24,7 +24,6 @@ export default function Home() {
 
   function showFinalScreen() {
     if (counter < 38) {
-      setCounter(-1);
       setFinalScreen(true);
     }
   }

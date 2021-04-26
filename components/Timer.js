@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 export default function Timer() {
 	const [seconds, setSeconds] = useState(0)
-	const [minutes, setMinutes] = useState(2)
-	const [started, setStarted] = useState(true)
+	const [minutes, setMinutes] = useState(50)
+	const [started, setStarted] = useState(false)
 	const [error, setError] = useState(false)
 	const [currID, setCurrID] = useState(0)
 
@@ -64,10 +64,8 @@ export default function Timer() {
 	}, [seconds, started]);
 
 	useEffect(() => {
-		console.log("123");
 		if (error && started) {
 			minus();
-			console.log("asd");
 		}
 		if(error)setError(false);
 	}, [error])
