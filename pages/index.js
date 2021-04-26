@@ -8,6 +8,7 @@ import Keyboard from '../components/puzzles/Keyboard';
 import { Howl, Howler } from 'howler';
 import Colors from '../components/puzzles/Colors';
 import Timer from '../components/Timer';
+import Logo from '../components/Logo';
 
 export default function Home() {
   const [counter, setCounter] = useState(-1);
@@ -82,6 +83,7 @@ export default function Home() {
         <></>
       }
       <Timer />
+      <Logo />
       <div className={styles.container}>
 
         <TextInfo counter={counter} target={-1} >

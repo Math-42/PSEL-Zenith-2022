@@ -22,7 +22,7 @@ export default function Timer() {
 	}
 
 	const minus = () => {
-		if (minutes - 3 <= 0) {
+		if (minutes - 3 < 0 || ((minutes - 3)==0 && seconds===0)) {
 			clearTimeout(currID);
 			setStarted(false);
 			setSeconds(0);

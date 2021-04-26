@@ -82,6 +82,13 @@ body::before {
     pointer-events: none;
 }
 
+pre {
+    font-size: 2px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
 ::selection {
     background: none;
 }
