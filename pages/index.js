@@ -69,7 +69,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className={styles.header}>PSEL_2021.1 SERIE:Z3N4DIR</div>
+      <div className={styles.header}>PSEL_2022.1 SERIE:Z3N4DIR</div>
       <section className={styles.scanline} />
       {finalScreen ?
         <div className={styles.finalScreen}>
@@ -92,7 +92,7 @@ export default function Home() {
         - As falhas diminuem o tempo restante da atividade;<br />
         - Falhar não influencia na sua avaliação no Processo Seletivo;<br />
         - Mais alguma dúvida? Pergunte ao seu avaliador.<br />
-          <TextInput counter={counter} target={-1} pass={"start"} addCounter={addCounter} onStart={onStart} >
+          <TextInput counter={counter} target={-1} pass={"PSEL_2022"} addCounter={addCounter} onStart={onStart} >
             &gt; Insira a senha para começar:
           </TextInput>
         </TextInfo>
@@ -121,15 +121,15 @@ export default function Home() {
         <TextInfo counter={counter} target={3} addCounter={addCounter} >
           <br />
           <span style={{ color: "white", display: 'flex', justifyContent: 'center' }}>
-            01111011&nbsp; 01011010&nbsp; 00110011&nbsp; 01001110&nbsp; 01010011 <br />
+            00100011&nbsp; 01011010&nbsp; 00110011&nbsp; 01001110&nbsp; 01010011 <br />
             00110011&nbsp; 01001110&nbsp; 01001000&nbsp; 00110100&nbsp; 01011111 <br />
-            00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110001&nbsp; 01111101 <br />
+            00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110010&nbsp; 00100011 <br />
           </span>
           <br />
           &gt; [NARRADOR]:"Pelo visto a tempestade atingiu o hover e seu sistema está executando de forma minima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
           <br />
         </TextInfo>
-        <TextInput counter={counter} target={4} pass={"{Z3NS3NH4_2021}"} addCounter={addCounter}>
+        <TextInput counter={counter} target={4} pass={"#Z3NS3NH4_2022#"} addCounter={addCounter}>
           &gt; Insira uma chave válida:
       </TextInput>
         <TextInfo counter={counter} target={5} addCounter={addCounter} >
@@ -200,11 +200,11 @@ export default function Home() {
           &gt; [NARRADOR]:"Não há outro jeito. Forçar algo só causaria mais danos ao Hover, talvez as plantas do Hover possuam alguma explicação."
         </TextInfo>
         <TextInfo counter={counter} target={27} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Vocês olham por cima do Hover e percebem um teclado com simbolos estranhos, parece um tipo de senha, mas qual a ordem certa?"
+          &gt; [NARRADOR]:"Vocês olham por cima do Hover e percebem um teclado com símbolos estranhos, parece um tipo de senha, mas qual a ordem certa?"
         </TextInfo>
         <Keyboard counter={counter} target={28} addCounter={addCounter} />
         <TextInfo counter={counter} target={29} addCounter={addCounter} >
-          &gt; [NARRADOR]:"A tampa do robo se levanta."
+          &gt; [NARRADOR]:"A tampa do robô se levanta."
         </TextInfo>
         <TextInfo counter={counter} target={30} addCounter={addCounter} >
           &gt; [NARRADOR]:"Por sorte, o Hover parece estar em um bom estado por dentro, mas logo outro problema surge."
