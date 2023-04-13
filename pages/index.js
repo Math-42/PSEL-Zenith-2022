@@ -126,7 +126,7 @@ export default function Home() {
             00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110011&nbsp; 00100011 <br />
           </span>
           <br />
-          &gt; [NARRADOR]:"Pelo visto a tempestade atingiu o hover e seu sistema está executando de forma minima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
+          &gt; [NARRADOR]:"Pelo visto a tempestade atingiu o hover e seu sistema está executando de forma mínima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
           <br />
         </TextInfo>
         <TextInput counter={counter} target={4} pass={"#Z3NS3NH4_2023#"} addCounter={addCounter}>
@@ -178,7 +178,7 @@ export default function Home() {
           &gt; [NARRADOR]:"Uma tempestade solar ocorreu durante a noite e bagunçou um pouco os sistemas, ainda bem que vocês possuem um backup de tudo."
         </TextInfo>
         <TextInfo counter={counter} target={20} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o Hover não tem a mesma sorte, caso ele não seja recuperado e concertado a tempo {`\${InserirAlgoTerrível}`} pode acontecer"
+          &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o Hover não tem a mesma sorte, caso ele não seja recuperado e consertado a tempo {`\${InserirAlgoTerrível}`} pode acontecer"
         </TextInfo>
         <TextInfo counter={counter} target={21} addCounter={addCounter} >
           &gt; [NARRADOR]:"Um painel se abre diante de vocês indicando a posição de onde o hover estava quando começou a falhar."
@@ -194,7 +194,7 @@ export default function Home() {
           &gt; [NARRADOR]:"Depois de alguns minutos, o hover volta para a base."
         </TextInfo>
         <TextInfo counter={counter} target={25} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Para poder concertá-lo, será necessário abrir sua carcaça."
+          &gt; [NARRADOR]:"Para poder consertá-lo, será necessário abrir sua carcaça."
         </TextInfo>
         <TextInfo counter={counter} target={26} addCounter={addCounter} >
           &gt; [NARRADOR]:"Não há outro jeito. Forçar algo só causaria mais danos ao Hover, talvez as plantas do Hover possuam alguma explicação."
@@ -239,7 +239,7 @@ export default function Home() {
           &gt; [NARRADOR]:"Vocês escutam alguns bips, enquanto conectam os fios retirados e fecham sua carcaça."
         </TextInfo>
         <TextInfo counter={counter} target={42} addCounter={addCounter} >
-          &gt; [NARRADOR]:"O hover foi concertado <del>até a próxima tempestade</del> com sucesso!"
+          &gt; [NARRADOR]:"O hover foi consertado <del>até a próxima tempestade</del> com sucesso!"
         </TextInfo>
         <TextInfo counter={counter} target={43} addCounter={addCounter} >
           &gt; [NARRADOR]:"Missão cumprida!"
