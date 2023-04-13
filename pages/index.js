@@ -178,7 +178,7 @@ export default function Home() {
           &gt; [NARRADOR]:"Uma tempestade solar ocorreu durante a noite e bagunçou um pouco os sistemas, ainda bem que vocês possuem um backup de tudo."
         </TextInfo>
         <TextInfo counter={counter} target={20} addCounter={addCounter} >
-          &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o Hover pode não ter a mesma sorte, caso ele não seja recuperado e consertado a tempo algo terrível pode acontecer"
+          &gt; [NARRADOR]:"Entretanto outra tempestade está vindo e o Hover não tem a mesma sorte, caso ele não seja recuperado e concertado a tempo {`\${InserirAlgoTerrível}`} pode acontecer"
         </TextInfo>
         <TextInfo counter={counter} target={21} addCounter={addCounter} >
           &gt; [NARRADOR]:"Um painel se abre diante de vocês indicando a posição de onde o hover estava quando começou a falhar."
