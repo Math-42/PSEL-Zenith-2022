@@ -69,7 +69,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className={styles.header}>PSEL_2023.1 SERIE:Z3N4DIR</div>
+      <div className={styles.header}>PSEL_2024.1 SERIE:Z3N4DIR</div>
       <section className={styles.scanline} />
       {finalScreen ?
         <div className={styles.finalScreen}>
@@ -92,7 +92,7 @@ export default function Home() {
         - As falhas diminuem o tempo restante da atividade;<br />
         - Falhar não influencia na sua avaliação no Processo Seletivo;<br />
         - Mais alguma dúvida? Pergunte ao seu avaliador.<br />
-          <TextInput counter={counter} target={-1} pass={"PSEL_2023"} addCounter={addCounter} onStart={onStart} >
+          <TextInput counter={counter} target={-1} pass={"PSEL_2024"} addCounter={addCounter} onStart={onStart} >
             &gt; Insira a senha para começar:
           </TextInput>
         </TextInfo>
@@ -123,13 +123,13 @@ export default function Home() {
           <span style={{ color: "white", display: 'flex', justifyContent: 'center' }}>
             00100011&nbsp; 01011010&nbsp; 00110011&nbsp; 01001110&nbsp; 01010011 <br />
             00110011&nbsp; 01001110&nbsp; 01001000&nbsp; 00110100&nbsp; 01011111 <br />
-            00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110011&nbsp; 00100011 <br />
+            00110010&nbsp; 00110000&nbsp; 00110010&nbsp; 00110100&nbsp; 00100011 <br />
           </span>
           <br />
           &gt; [NARRADOR]:"Pelo visto a tempestade atingiu o hover e seu sistema está executando de forma mínima, ou seja, as coisas vão ser manuais daqui pra frente, como nos velhos tempos"<br />
           <br />
         </TextInfo>
-        <TextInput counter={counter} target={4} pass={"#Z3NS3NH4_2023#"} addCounter={addCounter}>
+        <TextInput counter={counter} target={4} pass={"#Z3NS3NH4_2024#"} addCounter={addCounter}>
           &gt; Insira uma chave válida:
       </TextInput>
         <TextInfo counter={counter} target={5} addCounter={addCounter} >
